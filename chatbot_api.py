@@ -1441,6 +1441,6 @@ def handle_user_input_with_pelican_support(user_input: str, conversation_state: 
     if not is_product_related_query(user_input):
         return generate_general_response(user_input)
 
-    return handle_user_input(user_input, conversation_state)
+    return handle_user_input(user_input)
 
 
