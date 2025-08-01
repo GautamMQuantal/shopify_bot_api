@@ -1257,7 +1257,8 @@ def handle_user_input(user_input,conversation_state):
             answer = process_single_product(
                 intent["product_name_or_sku"],
                 intent["requested_info"],
-                user_input
+                user_input,
+                conversation_state
             )
             return answer
 
