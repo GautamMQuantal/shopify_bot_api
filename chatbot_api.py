@@ -1196,7 +1196,7 @@ def process_comparison(product1_name, product2_name, requested_info, user_input)
 
 
 # ENHANCED: Enhanced input handler with status and category query support
-def handle_user_input(user_input):
+def handle_user_input(user_input,conversation_state):
     """Enhanced input handler with date, status and category query support"""
     
     # Check for date-based queries first
@@ -1441,6 +1441,6 @@ def handle_user_input_with_pelican_support(user_input: str, conversation_state: 
     if not is_product_related_query(user_input):
         return generate_general_response(user_input)
 
-    return handle_user_input(user_input)
+    return handle_user_input(user_input,conversation_state)
 
 
